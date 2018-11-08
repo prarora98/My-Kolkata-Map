@@ -1,0 +1,169 @@
+.App {
+    text-align: center;
+}
+
+/* map styling from google docs */
+#map {
+    height: 80vh;
+    width: 100%;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* styling the sidebar */
+.venue-list {
+    width: 330px;
+    max-width: 100%;
+    max-height: 100vh;
+    z-index: 100;
+}
+
+/*styling the search bar*/
+.input-data {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+/*styling the sidebar heading*/
+.heading {
+    border: 1px solid #1C6EA4;
+    box-shadow: 2px 2px 7px 1px #1C6EA4;
+    padding: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/*styling each list item*/
+.view {
+    list-style: none;
+    border: 1px solid #1C6EA4;
+    width: 100%;
+    height: 30px;
+    padding: 12px;
+    margin-top: -12px;
+    margin-left: -38px;
+    margin-bottom: 11px;
+    font-size: 1.4em;
+}
+
+/*adding hover element to list item*/
+.view:hover {
+    cursor: pointer;
+}
+
+/*styling the navbar*/
+.navbar {
+    width: 100%;
+    height: 40px;
+    font-size: 1.6rem;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    background-color: #1C6EA4;
+    margin-bottom: -10px;
+}
+
+/*styling the footer*/
+.footer {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: #1C6EA4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*styling the attribution in the footer*/
+.attribute {
+    font-size: 1.2rem;
+    color: white;
+}
+
+/*styling the foursquare link in the footer*/
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+/*https://www.npmjs.com/package/react-burger-menu -documentation used*/
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 2vh;
+    margin-right: 5px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+    background: white;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+    padding: 15px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+    background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+    background: rgb(241, 241, 241);
+    font-size: 1.0em;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+    margin: auto;
+    text-align: left;
+}
+/*styling to improve responsiveness for width upto 480px*/
+@media screen and (max-width: 480px) {
+    .bm-item-list {
+        padding: 0;
+    }
+
+    .bm-menu {
+        font-size: 0.9em;
+        width: 100%;
+    }
+
+    .bm-burger-button {
+        left: 10px;
+        top: 20px;
+        height: 25px;
+        width: 30px;
+    }
+
+    .navbar {
+        font-size: 1.4rem;
+        padding-left: 10px;
+    }
+
+}
+
+/* Individual item */
+.bm-item {
+    display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
