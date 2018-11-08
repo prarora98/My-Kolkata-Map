@@ -9,15 +9,16 @@ To get started please do the following steps:
 
 Clone or download the starter repository
 ## Dependencies
-1. Install the following dependencies 
+1. install all project dependencies with `npm install`
+
+2. Then install the following dependencies
+
   npm install axios --save
   
   npm install react-burger-menu --save
   
   npm install escape-string-regexp --save
   
-2.Then install all project dependencies with `npm install`
-
 3.Now start the development server with `npm start`
 
 ## For offline first
