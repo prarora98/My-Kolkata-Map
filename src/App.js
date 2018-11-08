@@ -40,6 +40,7 @@ class App extends Component {
       limit: 8
     };
 
+   //https://github.com/axios/axios
     axios
       .get(endPoint + new URLSearchParams(parameters))
       .then(response => {
@@ -59,8 +60,8 @@ class App extends Component {
       });
   };
 
-  //initializing the map L7 4
-
+  //initializing the map L7 4 Location is Kolkata
+  // https://developers.google.com/maps/documentation/javascript/examples/map-simple
   initMap = () => {
     var map = new window.google.maps.Map(document.getElementById("map"), {
       center: { lat: 22.567, lng: 88.367 },
@@ -95,9 +96,12 @@ class App extends Component {
         title: myCity.venue.name,
         animation: window.google.maps.Animation.DROP
       });
+      
       // adding animation to the marker
+      //https://developers.google.com/maps/documentation/javascript/examples/marker-animations
       marker.addListener("click", toggleBounce);
       this.state.markers.push(marker);
+      
       //function to add animation to marker
       function toggleBounce() {
         if (marker.getAnimation() !== null) {
@@ -109,7 +113,8 @@ class App extends Component {
           }, 1500);
         }
       }
-
+      
+      // when marker is clicked opens info window
       marker.addListener("click", function() {
         infowindow.setContent(contentString);
         infowindow.open(map, marker);
