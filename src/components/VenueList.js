@@ -1,11 +1,9 @@
 import React from "react";
 import "../App.css";
 import { slide as Menu } from "react-burger-menu";
-/*
-        Line 17:create a list item for each venue in our array
-                         
-        Line 18:created key prop because each child in an iterator or array should have unique key property
-              */
+
+/* Line 17:create a list item for each venue in our array*/
+/* Line 18:created key prop because each child in an iterator or array should have unique key property*/
 class VenueList extends React.Component {
   clickListName = venueName => {
     this.props.markers.map(marker => {
