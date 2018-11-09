@@ -24,6 +24,7 @@ class VenueList extends React.Component {
         aria-label="Menu"
         aria-controls="navigation"
         aria-expanded="false"
+        role="menu"
       >
         <div className="venue-list">
           <h2 className="heading" tabIndex="0">
@@ -34,6 +35,7 @@ class VenueList extends React.Component {
             type="search"
             placeholder="Filter location"
             aria-label="Search Venue"
+            role="search"
             value={this.props.query}
             onChange={event => this.props.updateQuery(event.target.value)}
           />
