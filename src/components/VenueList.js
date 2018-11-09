@@ -33,11 +33,11 @@ class VenueList extends React.Component {
             className="input-data"
             type="search"
             placeholder="Filter location"
-            aria-labelledby="Search Venue"
+            aria-label="Search Venue"
             value={this.props.query}
             onChange={event => this.props.updateQuery(event.target.value)}
           />
-          <ol className="viewer" aria-labelledby="List of venues">
+          <ol className="viewer" aria-label="List of venues">
             {this.props.venues.map(myCity => (
               <li
                 className="view"
@@ -48,7 +48,7 @@ class VenueList extends React.Component {
                 onClick={() => {
                   this.clickListName(myCity.venue.name);
                 }}
-                aria-labelledby="Restaurant"
+                aria-label="Restaurant"
               >
                 {myCity.venue.name}
               </li>
