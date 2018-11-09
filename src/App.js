@@ -78,7 +78,7 @@ class App extends Component {
 
     this.infowindow = infowindow;
 
-    this.state.venues.map(myCity => {
+    this.state.venues.forEach(myCity => {
       var contentString = `<div class="infoWindow">
             <h2>${myCity.venue.name}</h2>
             <h3>Address:${myCity.venue.location.address}</h3>
@@ -163,7 +163,7 @@ class App extends Component {
             updateQuery={b => this.updateQuery(b)}
           />
 
-          <div id="map" tabIndex="0" role="application" aria-labelledby="Map" />
+          <div id="map" tabIndex="0" role="application" aria-label="Map" />
           <Footer />
         </ErrorBoundary>
       </main>
