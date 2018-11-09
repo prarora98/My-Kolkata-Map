@@ -39,7 +39,7 @@ class VenueList extends React.Component {
             value={this.props.query}
             onChange={event => this.props.updateQuery(event.target.value)}
           />
-          <ol className="viewer" aria-label="List of venues">
+          <ol className="viewer" aria-label="List of venues" role="list">
             {this.props.venues.map(myCity => (
               <li
                 className="view"
