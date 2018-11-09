@@ -11,7 +11,7 @@ Clone or download the starter repository
 ## Dependencies
 1. install all project dependencies with `npm install`
 
-2. Then install the following dependencies
+2. The following dependencies were also used
 
   npm install axios --save
   
@@ -63,6 +63,10 @@ I have gone through a number of documentations and walkthroughs for this project
 8.https://developer.foursquare.com/
 
 9.https://reactjs.org/tutorial/tutorial.html
+
+10.https://www.w3.org/TR/wai-aria/#role_definitions
+
+11. https://javascriptplayground.com/functional-stateless-components-react/
 
 Walkthrough video for the projects: 
 
