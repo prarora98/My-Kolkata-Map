@@ -1,7 +1,8 @@
 import React from "react";
-
-class Footer extends React.Component {
-  render() {
+//https://javascriptplayground.com/functional-stateless-components-react/
+// changed to functional stateless components
+const Footer= function(props){
+    
     return (
       <div className="footer">
         <p className="attribute" tabIndex="0">
@@ -13,6 +14,6 @@ class Footer extends React.Component {
       </div>
     );
   }
-}
+
 
 export default Footer;
